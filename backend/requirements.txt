@@ -1,0 +1,45 @@
+# Web 框架
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic-settings
+
+# 数据库
+sqlalchemy[asyncio]
+aiomysql
+cryptography
+
+# 认证与安全
+pyjwt
+bcrypt
+
+# 文档解析
+pandas
+openpyxl
+python-docx
+pdfplumber
+pypdf
+charset-normalizer
+
+# 检索与分词
+jieba
+numpy
+
+# RAG / LangChain（1.x，partner 包）
+# 注意：openai 必须锁 2.x——3.x 会把 embedding 输入客户端分词成 token ID 并默认
+# base64 编码，百炼兼容端点（DashScope）不识别，会报 "contents is neither str nor list of str"
+langchain
+langchain-core
+langchain-openai
+langchain-chroma
+langchain-text-splitters
+chromadb
+openai>=2.0,<3
+
+# 大模型服务
+dashscope
+
+# 缓存 / 限流 / 稳定性
+redis
+slowapi
+tenacity
